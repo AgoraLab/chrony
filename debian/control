@@ -6,7 +6,7 @@ XSBC-Original-Maintainer: Vincent Blut <vincent.debian@free.fr>
 Standards-Version: 4.5.1
 Build-Depends: asciidoctor,
                bison,
-               debhelper-compat (= 13),
+               debhelper-compat (= 11),
                dh-apparmor,
                gnutls-bin <!nocheck>,
                iproute2 [linux-any] <!nocheck>,
@@ -28,7 +28,7 @@ Architecture: linux-any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: adduser,
          iproute2 [linux-any],
-         libcap2-bin (>= 1:2.32-1),
+         libcap2-bin,
          tzdata,
          ucf,
          ${misc:Depends},

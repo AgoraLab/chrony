@@ -8,7 +8,7 @@ After=network.target
 
 [Service]
 Type=forking
-PIDFile=/run/chrony/chronyd.pid
+PIDFile=/run/chronyd.pid
 EnvironmentFile=-/etc/default/chrony
 ExecStart=/usr/lib/systemd/scripts/chronyd-starter.sh $DAEMON_OPTS
 PrivateTmp=yes
