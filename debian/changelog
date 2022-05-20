@@ -1,3 +1,10 @@
+chrony (4.1-3ubuntu2) bionic; urgency=medium
+
+  * apparmor fix
+  * dirs add /var/log/chrony
+
+ -- root <hezijian@agora.io>  Fri, 20 May 2022 12:21:22 +0000
+
 chrony (4.1-3ubuntu1) impish; urgency=medium
 
   * Merge with Debian unstable (LP: #1940252). Remaining changes:

@@ -35,7 +35,7 @@ case "$1" in
         if ! chronyd -p | grep -q "^user"; then
             for d in /var/lib/chrony /var/log/chrony; do
                 if ! dpkg-statoverride --list "$d" >/dev/null; then
-                    dpkg-statoverride --update --add _chrony _chrony 0750 "$d"
+                    dpkg-statoverride --update --add _chrony _chrony 0755 "$d"
                 fi
             done
         fi
