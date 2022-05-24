@@ -35,7 +35,6 @@ Depends: adduser,
          ${shlibs:Depends}
 Suggests: dnsutils,
           networkd-dispatcher
-Breaks: network-manager (<< 1.20.0-1~)
 Conflicts: time-daemon
 Provides: time-daemon
 Replaces: time-daemon
