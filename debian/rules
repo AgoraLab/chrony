@@ -28,7 +28,9 @@ override_dh_install:
 	dh_install
 	install -m 0640 -t $(BASE)/usr/share/chrony/ debian/chrony.keys
 	install -m 0755 -T examples/chrony.nm-dispatcher.dhcp ${BASE}/usr/lib/NetworkManager/dispatcher.d/20-chrony-dhcp
-	install -m 0755 -T examples/chrony.nm-dispatcher.onoffline $(BASE)/usr/lib/NetworkManager/dispatcher.d/20-chrony-onoffline
+	install -m 0755 -T examples/chrony.nm-dispatcher.onoffline ${BASE}/usr/lib/NetworkManager/dispatcher.d/20-chrony-onoffline
+	install -m 0755 -T examples/chrony.nm-dispatcher.onoffline $(BASE)/usr/lib/networkd-dispatcher/routable.d/20-chrony-onoffline
+	install -m 0755 -T examples/chrony.nm-dispatcher.onoffline $(BASE)/usr/lib/networkd-dispatcher/carrier.d/20-chrony-onoffline
 	install -m 0644 -T examples/chrony.logrotate $(BASE)/etc/logrotate.d/chrony
 	dh_apparmor --profile-name=usr.sbin.chronyd -pchrony
 	install -D -p -m 0644 debian/chrony.dhcp $(BASE)/etc/dhcp/dhclient-exit-hooks.d/chrony

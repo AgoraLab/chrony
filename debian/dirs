@@ -3,5 +3,7 @@ etc/logrotate.d
 etc/ppp/ip-down.d
 etc/ppp/ip-up.d
 usr/lib/NetworkManager/dispatcher.d
+usr/lib/networkd-dispatcher/routable.d
+usr/lib/networkd-dispatcher/carrier.d
 var/lib/chrony
 var/log/chrony

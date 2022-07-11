@@ -1,3 +1,16 @@
+chrony (4.1-3ubuntu5) bionic; urgency=medium
+
+  *fix networkd-dispatcher off.d
+
+ -- root <root@4d7a269dccf3>  Mon, 11 Jul 2022 03:52:03 +0000
+
+chrony (4.1-3ubuntu4) bininc; urgency=medium
+
+ * only ipv4 in use
+ * networkd-dispatcher/carrier.d onoffline
+
+ -- hezijian <hezjian@agora.io> Sat, 04 Jun 2022 17:00:00 +0000
+
 chrony (4.1-3ubuntu2) bionic; urgency=medium
 
   * apparmor fix
